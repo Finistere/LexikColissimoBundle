@@ -16,7 +16,7 @@ use WSColissimo\WSColiPosteLetterService\Request\ValueObject\ServiceCallContext;
 use WSColissimo\WSColiPosteLetterService\Request\ValueObject\Letter;
 use WSColissimo\WSColiPosteLetterService\Response\ValueObject\ReturnLetter;
 
-use Symfony\Component\Validator\ValidatorInterface;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 /**
  * WSColiPosteLetterService
@@ -26,7 +26,7 @@ use Symfony\Component\Validator\ValidatorInterface;
 class WSColiPosteLetterService
 {
     /**
-     * @var Client
+     * @var ClientInterface
      */
     protected $client;
 
@@ -36,7 +36,7 @@ class WSColiPosteLetterService
     protected $params;
 
     /**
-     * @var Validator
+     * @var ValidatorInterface
      */
     protected $validator;
 

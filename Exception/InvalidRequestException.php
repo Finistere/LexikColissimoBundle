@@ -2,7 +2,7 @@
 
 namespace Lexik\Bundle\ColissimoBundle\Exception;
 
-use Symfony\Component\Validator\ConstraintViolationList;
+use Symfony\Component\Validator\ConstraintViolationListInterface;
 
 /**
  * InvalidRequestException thrown if request does not pass validation
@@ -12,12 +12,12 @@ use Symfony\Component\Validator\ConstraintViolationList;
 class InvalidRequestException extends \Exception
 {
     /**
-     * @var ConstraintViolationList
+     * @var ConstraintViolationListInterface
      */
     protected $violations;
 
     /**
-     * @param ConstraintViolationList $violations
+     * @param ConstraintViolationListInterface $violations
      */
     public function setViolations($violations)
     {
@@ -25,7 +25,7 @@ class InvalidRequestException extends \Exception
     }
 
     /**
-     * @return ConstraintViolationList
+     * @return ConstraintViolationListInterface
      */
     public function getViolations()
     {

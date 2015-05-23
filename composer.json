@@ -1,9 +1,9 @@
 {
-    "name": "lexik/colissimo-bundle",
+    "name": "Finistere/colissimo-bundle",
     "type": "symfony-bundle",
     "description": "This bundle provides a wrapper for the lexik/ws-colissimo library",
     "keywords": ["Symfony2", "bundle", "colissimo"],
-    "homepage": "https://github.com/lexikteam/LexikColissimoBundle",
+    "homepage": "https://github.com/Finistere/LexikColissimoBundle",
     "license": "MIT",
     "authors": [
         {
@@ -15,10 +15,16 @@
             "email": "dev@lexik.fr"
         }
     ],
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/Finistere/ws-colissimo"
+      }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": "~2.1",
-        "lexik/ws-colissimo": "~1.0"
+        "Finistere/ws-colissimo": "dev-master"
     },
     "autoload":     {
         "psr-0": { "Lexik\\Bundle\\ColissimoBundle": "" }
